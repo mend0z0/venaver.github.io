@@ -25,7 +25,7 @@ body{
     color:black;
 }
 
-/* BACKGROUND DECOR */
+/* BACKGROUND */
 
 .bg-shape{
     position:absolute;
@@ -54,60 +54,12 @@ body{
 .container{
     position:relative;
     z-index:2;
+    width:100%;
     height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:40px;
-}
 
-/* LOGO */
-
-.logo-wrap{
-    width:170px;
-    height:170px;
-    border-radius:50%;
-    background:white;
     display:flex;
     justify-content:center;
     align-items:center;
-    box-shadow:
-        0 20px 50px rgba(0,0,0,0.18),
-        inset 0 0 0 2px rgba(255,255,255,0.4);
-
-    margin-bottom:50px;
-
-    animation:float 4s ease-in-out infinite;
-}
-
-.logo{
-    width:130px;
-}
-
-/* TITLE */
-
-h1{
-    font-family:'Cormorant Garamond', serif;
-    font-size:5.5rem;
-    line-height:0.95;
-    font-weight:600;
-    max-width:1100px;
-    margin-bottom:25px;
-}
-
-.gold{
-    color:#c59600;
-}
-
-/* SUBTITLE */
-
-.subtitle{
-    font-size:1.1rem;
-    letter-spacing:2px;
-    margin-bottom:60px;
-    opacity:0.75;
 }
 
 /* BUTTONS */
@@ -115,16 +67,22 @@ h1{
 .language-box{
     display:flex;
     gap:35px;
-    flex-wrap:wrap;
     justify-content:center;
+    align-items:center;
+
+    margin-top:-120px;
 }
 
 .card{
     width:240px;
     height:220px;
+
     background:rgba(255,255,255,0.82);
+
     backdrop-filter:blur(8px);
+
     border-radius:24px;
+
     text-decoration:none;
     color:black;
 
@@ -140,7 +98,9 @@ h1{
 }
 
 .card:hover{
+
     transform:translateY(-10px) scale(1.03);
+
     box-shadow:
         0 20px 45px rgba(0,0,0,0.18);
 }
@@ -162,20 +122,6 @@ h1{
     color:#c59600;
 }
 
-/* FLOAT ANIMATION */
-
-@keyframes float{
-    0%{
-        transform:translateY(0px);
-    }
-    50%{
-        transform:translateY(-10px);
-    }
-    100%{
-        transform:translateY(0px);
-    }
-}
-
 /* MOBILE */
 
 @media(max-width:900px){
@@ -185,34 +131,17 @@ h1{
     }
 
     .container{
-        padding:30px 20px 80px;
-    }
-
-    h1{
-        font-size:3.3rem;
-    }
-
-    .subtitle{
-        margin-bottom:40px;
+        padding:40px 20px;
     }
 
     .language-box{
         flex-direction:column;
-        align-items:center;
+        margin-top:0;
     }
 
     .card{
         width:100%;
         max-width:320px;
-    }
-
-    .logo-wrap{
-        width:140px;
-        height:140px;
-    }
-
-    .logo{
-        width:105px;
     }
 }
 
@@ -226,25 +155,10 @@ h1{
 
 <div class="container">
 
-    <!-- PUT YOUR LOGO FILE NAME HERE -->
-    <div class="logo-wrap">
-        <img src="logo.png" class="logo">
-    </div>
-
-    <h1>
-        Enfoquémonos<br>
-        en lo que<br>
-        <span class="gold">más importa</span>
-    </h1>
-
-    <div class="subtitle">
-        SELECT YOUR LANGUAGE
-    </div>
-
     <div class="language-box">
 
         <!-- SPANISH -->
-        <a class="card" href="https://sites.google.com/view/your-spanish-site">
+        <a class="card" href="https://sites.google.com/view/venaver/home-esp">
 
             <h2>Español</h2>
 
@@ -255,7 +169,7 @@ h1{
         </a>
 
         <!-- ENGLISH -->
-        <a class="card" href="https://sites.google.com/view/your-english-site">
+        <a class="card" href="https://sites.google.com/view/venaver/home-eng">
 
             <h2>English</h2>
 
